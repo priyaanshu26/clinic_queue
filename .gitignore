@@ -1,45 +1,78 @@
 # Miscellaneous
+###############################################
+# Flutter & Dart .gitignore (Optimized/Merged) #
+###############################################
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs & Editors
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.atom/
+.history
+
+# Flutter/Dart/Pub
+.dart_tool/
+.pub/
+.pub-cache/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+pubspec.lock
+build/
+coverage/
+**/doc/api/
+**/ios/Flutter/.last_build_id
+migrate_working_dir/
+
+# Android
+android/.gradle/
+android/.cxx/
+android/local.properties
+android/key.properties
+android/gradlew
+android/gradlew.bat
+android/captures/
+android/GeneratedPluginRegistrant.java
+android/**/gradle-wrapper.jar
+android/**/build/
+android/app/debug/
+android/app/profile/
+android/app/release/
+**/*.keystore
+**/*.jks
+
+# Symbolication/Obfuscation
+app.*.symbols
+app.*.map.json
+
+# Miscellaneous
 *.class
 *.log
 *.pyc
 *.swp
-.DS_Store
-.atom/
-.build/
-.buildlog/
-.history
 .svn/
 .swiftpm/
-migrate_working_dir/
 
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
-.idea/
+# Web
+web/.dart_tool/
+web/build/
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
+# macOS (if enabled in future)
+macos/Flutter/ephemeral/
+macos/build/
 
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
-.dart_tool/
-.flutter-plugins-dependencies
-.pub-cache/
-.pub/
-/build/
-/coverage/
+# Windows (if enabled in future)
+windows/Flutter/ephemeral/
+windows/build/
 
-# Symbolication related
-app.*.symbols
+# Linux (if enabled in future)
+linux/Flutter/ephemeral/
+linux/build/
 
-# Obfuscation related
-app.*.map.json
-
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+# Environment/Secrets
+.env
